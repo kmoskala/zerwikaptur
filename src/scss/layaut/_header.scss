@@ -1,0 +1,59 @@
+#header {
+
+  background-size: cover;
+background-repeat: no-repeat;
+  position: relative;
+
+  .menu {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    max-height: 40px;
+    .hamburger {
+      position: relative;
+    }
+    .hidden-menu {
+      display: none;
+      list-style: none;
+      color: $white;
+      background-color: rgba(000,000,000,0.5);
+      padding: 0;
+      position: absolute;
+      top: 100px;
+
+      li {
+        text-align: center;
+        padding: 15px 30px;
+        text-transform: uppercase;
+        font-size: 24px;
+        a{
+          text-decoration: none;
+          color: $white;
+
+          &:hover {
+            text-decoration: none;
+            color: $white;
+          }
+        }
+        &:hover {
+          background-color: rgba(000,000,000,1);
+        }
+      }
+    }
+    .navbar-menu{
+      width: 30px;
+      padding-top: 60px;
+      object-fit: contain;
+      cursor: pointer;
+
+    }
+    .logo {
+      padding-top: 15px;
+      cursor: pointer;
+      img {
+        object-fit: contain;
+        height: 145px;
+      }
+    }
+  }
+  }

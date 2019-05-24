@@ -1,0 +1,61 @@
+.content {
+text-align: center;
+  .text-page {
+    padding: 0 80px;
+    .title {
+      font-size: 28px;
+      line-height: 40px;
+      padding: 30px 0;
+      font-weight: 600;
+    }
+    .text {
+      font-size: 22px;
+      letter-spacing: 2px;
+      line-height: 40px;
+    }
+  }
+}
+.one-item {
+  margin: 15px 0;
+  display: flex;
+  flex-flow: row nowrap;
+
+  &.reverse {
+    flex-direction: row-reverse;
+  }
+  .postTitle {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 10px 20px;
+  }
+  .postText {
+    text-align: left;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 33px;
+    padding: 10px 20px;
+  }
+  .postBtn {
+    text-align: right;
+    a {
+      font-size: 18px;
+      color: $white;
+      text-decoration: underline;
+    }
+  }
+}
+
+#calendar {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 0;
+  margin: 60px 0;
+}
+.one-day {
+  .day {
+    background-color: rgba(255,255,255,0.4);
+    padding: 25px;
+    font-size: 24px;
+  }
+}
