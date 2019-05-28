@@ -1,7 +1,7 @@
 body {
   background-color: $body-color;
   color: $white;
-  font-family: 'Sorts Mill Goudy', serif;
+  font-family: 'Lato', sans-serif;
 }
 i {
   position: absolute;
@@ -22,12 +22,11 @@ i {
 
 h1 {
   color: $white;
-  text-decoration: underline;
-  font-weight: 600;
   font-size: 45px;
   line-height: 80px;
-  letter-spacing: 5px;
+  letter-spacing: 1px;
   margin-top: 45px;
+  font-weight: 100;
 }
 .italic {
   font-style: italic;

@@ -9,6 +9,22 @@ $(document).ready(function () {
 			scrollTop: ($('.content').offset().top)
 		},500);
 	});
+	$('.trainers-container.owl-carousel').owlCarousel({
+		loop:true,
+		margin:25,
+		nav:true,
+		items:2
+		
+	});
+	$('.slider.owl-carousel').owlCarousel({
+		loop:true,
+		margin:25,
+		nav:true,
+		items:3,
+		autoplay: true,
+		autoplayTimeout:100,
+		autoplayHoverPause: true
+	});
 });
 
 // $(function(){
