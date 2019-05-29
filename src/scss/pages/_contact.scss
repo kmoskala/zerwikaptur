@@ -1,0 +1,67 @@
+.contact {
+  &-title,
+  .title {
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    text-align: left;
+    line-height: 30px;
+  }
+  &-desc,
+  .subtitle {
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    text-align: left;
+  }
+  &-title {
+    text-align: center;
+    margin-top: 25px;
+  }
+  &-desc {
+    text-align: center;
+    font-weight:300;
+    margin-top: 25px;
+
+  }
+  &-form {
+    textarea,
+    input {
+      color: $yellow;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid $yellow;
+      width: 100%;
+      padding: 5px 15px;
+      margin: 15px 0;
+      font-size: 18px;
+      font-weight: 300;
+      &:focus{
+        outline: none;
+      }
+    }
+    textarea{
+      height: 150px;
+      resize: none;
+    }
+  }
+  button,
+  &-btn {
+    margin-top: 0px;
+    font-weight: 300;
+    font-size: 24px;
+    padding: 10px 20px;
+    border: 2px solid $yellow;
+    color: $yellow;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 24px;
+    background-color: transparent;
+    &:focus,
+    &:hover {
+      outline: none;
+      background-color: $yellow;
+      color: $black;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 #header {
-
+  height: auto;
   background-size: cover;
 background-repeat: no-repeat;
   position: relative;
@@ -8,7 +8,7 @@ background-repeat: no-repeat;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    max-height: 40px;
+
     .hamburger {
       position: relative;
     }
@@ -20,6 +20,7 @@ background-repeat: no-repeat;
       padding: 0;
       position: absolute;
       top: 100px;
+      z-index: 999;
 
       li {
         text-align: center;
@@ -32,7 +33,7 @@ background-repeat: no-repeat;
 
           &:hover {
             text-decoration: none;
-            color: $white;
+            color: $yellow;
           }
         }
         &:hover {
@@ -52,8 +53,10 @@ background-repeat: no-repeat;
       cursor: pointer;
       img {
         object-fit: contain;
-        height: 145px;
+        height: 100px;
       }
     }
   }
   }
+
+

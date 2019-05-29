@@ -20,6 +20,9 @@ text-align: center;
   margin: 15px 0;
   display: flex;
   flex-flow: row nowrap;
+  &.hide {
+    display: none;
+  }
 
   &.reverse {
     flex-direction: row-reverse;
@@ -37,6 +40,15 @@ text-align: center;
     letter-spacing: 1px;
     line-height: 28px;
     padding: 10px 20px;
+    font-weight: 300;
+
+
+  }
+  .postdata {
+    text-align: left;
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding: 0 20px;
     font-weight: 300;
 
 
@@ -93,6 +105,7 @@ text-align: center;
     left: 0;
     height: 100%;
     width: 100%;
+    z-index: 99;
     background: rgba(000,000,000,0.8);
 
 

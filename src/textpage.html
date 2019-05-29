@@ -15,7 +15,7 @@
 <body>
 
 
-<section id="header">
+<section id="header" >
 	<div class="container">
 		<nav class="menu">
 			<div class="hamburger">
@@ -46,42 +46,41 @@
 		
 		</nav>
 	</div>
-
 </section>
-<section class="contact">
+<section class="content textpage" id="actual">
 	<div class="container">
 		<div class="row">
-			
-			<div class="col-lg-6">
-				<div class="contact-map" id="mapid"></div>
-			</div>
-			<div class="col-lg-6">
-				<div class="title">Masz pytania?</div>
-				<p class="subtitle">Napisz do nas przez formularz kontaktowy!</p>
-				<form class="contact-form" id="form">
-					<input type="text" placeholder="Imie i nazwisko" required>
-					<input type="email" placeholder="E-mail" required>
-					<input type="text" placeholder="Temat">
-					<textarea placeholder="Wiadomość"></textarea>
-					<button type="submit" class="form-btn btn">Wyślij</button>
-				</form>
-			</div>
-			<div class="col-lg-12">
-				<div class="contact-title">Szermierczy Uczniowski Klub Sportowy „Zerwikaptur”</div>
-				<p class="contact-desc">os. Niepodległości 19</p>
-				<p class="contact-desc">31-862 Kraków</p>
-				<p class="contact-desc">Telefon:</p>
-				<p class="contact-desc yellow">505-102-307</p>
-				<p class="contact-desc yellow">505-102-307</p>
-				<p class="contact-desc">e-mail:</p>
-				<p class="contact-desc yellow">zerwikaptur@zerwikaptur.pl</p>
-				<p class="contact-desc">NIP:  675-12-78-650</p>
-				<p class="contact-desc">Nr konta:   64-15001979-1219700199320000</p>
-			
-			
-			</div>
+			<h2 class="textpage-title">
+				Regulamin
+			</h2>
+			<p class="textpage-date">PROSZĘ PRZECZYTAĆ PRZED PISANIE STATUTU</p>
+			<p class="textpage-text">
+				Minimalna zawartość statutu określona została w art. 10 ust. 1 ustawy Prawo o stowarzyszeniach. Zgodnie z tymi zapisami w statucie musi być informacja o:
+				
+				nazwie, siedzibie i terenie działania
+				celach i sposobach ich realizacji
+				członkach stowarzyszenia (sposób nabycia, przyczyny utraty członkostwa, prawa i obowiązki członków)
+				władzach (sposób ich wyboru, uzupełniania składu oraz ich kompetencje)
+				możliwości otrzymywania przez członków zarządu wynagrodzenia za czynności wykonywane w związku z pełnioną funkcją
+				sposobie reprezentowania stowarzyszenia, w szczególności zaciągania zobowiązań majątkowych, a także sposobie podejmowania decyzji, czyli warunkach ważności uchwał
+				sposobie uzyskiwania środków finansowych oraz ustanawiania składek członkowskich
+				zasadach wprowadzania zmian w statucie
+				sposobie rozwiązania się stowarzyszenia.
+				
+				Nowością jest możliwość wynagradzania członków zarządu za pełnioną funkcję. Do tej pory członkowie, w tym członkowie zarządu mogli być zatrudniani w stowarzyszeniu przy pracach niezwiązanych bezpośrednio z obowiązkami, kompetencjami wynikającymi ze statutu (np. dostawiali wynagrodzenie na prowadzenie szkolenia, a nie za zarządzanie organizacją). Zgodnie ze zmienioną ustawą Prawo o stowarzyszeniach będzie można wynagradzać osoby w zarządach właśnie za ich pracę zarządczą. Warunkiem jest jednak wprowadzenie takiej możliwości do statutu stowarzyszenia.
+				
+				Uwaga! Umowy z członkami zarządu – niezależnie od tego czy będą one dotyczyły konkretnego zadania czy wynagrodzenia za pracę zarządczą – muszą być podpisywane przez pełnomocnika powołanego uchwałą walnego zebrania członków albo przez członka komisji rewizyjnej wskazanego w uchwale komisji rewizyjnej.
+				W statucie stowarzyszenia może być oczywiście dużo więcej informacji. Część z nich (np. zasady tworzenia oddziałów terenowych) zgodnie ze zmienioną ustawą Prawo o stowarzyszeniach wymaga szczegółowego opisania zgodnie z wytycznymi (art. 10a).
+			</p>
+		
+		
 		</div>
+		<a href="actual.html" class="btn ">
+			Powrót
+		</a>
+	
 	</div>
+
 </section>
 
 <section id="footer" class="footer" style="background-image: url(img/istockphoto-537437032-2048x2048.jpg)">
@@ -133,34 +132,7 @@
 
 <script src="js/plugins.js"></script>
 <script src="js/jQuery.js"></script>
-<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
-        integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
-        crossorigin="">
-</script>
-<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
-<script>
-	var map = L.map('mapid').setView([50.079920, 20.020910], 17);
-	
-	L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/dark-v8/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-		maxZoom: 18,
-		id: 'mapbox://styles/kmoskalahome/cjw3ch0t20vg41csglk53ej55',
-		accessToken: 'pk.eyJ1Ijoia21vc2thbGFob21lIiwiYSI6ImNqdzNjM2JzYTBlZWUzeXFxNXIzcGRwZHAifQ.l83aLhFV0SWIy6Cul8wj2g'
-	}).addTo(map);
-	
-	map.scrollWheelZoom.disable();
-	
-	
-	var trzydemarker = L.icon({
-		iconUrl: '/img/marker.png',
-		iconAnchor: [0, 40],
-	});
-	
-	L.marker([50.079920, 20.020910], {
-		icon: trzydemarker
-	}).addTo(map);
 
-</script>
 <script src="js/script.js"></script>
 <!-- endbuild  -->
 </body>

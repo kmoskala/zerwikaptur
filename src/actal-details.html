@@ -1,10 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Title</title>
+	<meta charset="utf-8">
+	<title>Gulp Starter Kit</title>
+	<!-- build:css -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+	      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+	      crossorigin=""/>
+	
+	<!-- endbuild -->
 </head>
 <body>
 
+
+<section id="header" >
+	<div class="container">
+		<nav class="menu">
+			<div class="hamburger">
+				<img src="img/menu.png" class="navbar-menu">
+				<ul class="hidden-menu">
+					<li>
+						<a href="about.html">O nas</a>
+					</li>
+					<li>
+						<a href="actual.html">Aktualności</a>
+					</li>
+					<li>
+						<a href="datatable.html">Terminarz</a>
+					</li>
+					<li>
+						<a href="galerry.html">Galeria</a>
+					</li>
+					<li>
+						<a href="contact.html">Kontakt</a>
+					</li>
+				</ul>
+			</div>
+			<div class="logo">
+				<a href="index.html">
+					<img src="img/logo-2.png">
+				</a>
+			</div>
+		
+		</nav>
+	</div>
+</section>
+<section class="content textpage" id="actual">
+	<div class="container">
+		<div class="row">
+			<h2 class="textpage-title">
+				Aktualność
+			</h2>
+			<p class="textpage-date">12.07.2019</p>
+			<p class="textpage-text">
+				<img src="img/DSCN20161.jpg">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat imperdiet quam, sit amet cursus sem scelerisque et. Duis ut tempus sapien. Donec eu lorem blandit, fermentum purus ac, tincidunt lectus. Praesent semper euismod est sit amet efficitur. Pellentesque semper tellus lectus, et bibendum justo gravida vitae. Morbi sollicitudin efficitur tristique. Duis commodo a est eget lacinia. Donec non urna velit. Fusce mattis nulla porttitor congue laoreet. Morbi et ante eget est fermentum porttitor. Praesent in posuere nulla, sed euismod felis. Proin eu dui ante. In porta facilisis tempor. Curabitur viverra dolor at convallis faucibus. Maecenas at sem tristique, ultrices leo id, vehicula lacus. Phasellus non mi in risus pellentesque tristique vel vitae turpis.
+						
+						Fusce blandit enim in viverra pretium. Fusce ultrices lorem facilisis, bibendum nisl eu, faucibus tortor. Suspendisse urna erat, pulvinar sit amet arcu vel, malesuada congue velit. Integer lorem libero, venenatis non libero imperdiet, cursus placerat est. Phasellus tincidunt neque sed fermentum viverra. Cras ullamcorper tincidunt elit ac posuere. Praesent dictum lorem quis faucibus eleifend. Nulla mollis est elit, id pulvinar orci interdum sit amet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras aliquet pellentesque dui, non egestas augue dignissim in. Aenean non finibus felis. Vestibulum eget leo quam. In quis tincidunt justo. Maecenas sit amet pretium elit.
+						
+						Morbi non magna sagittis, ullamcorper lorem in, interdum sem. Sed sed porta nunc. Proin faucibus orci sit amet ligula tristique, sit amet tempus ligula aliquam. Vivamus posuere placerat venenatis. Integer lacus urna, dictum eget aliquam vel, ornare tempor erat. Aliquam in erat vel ante ultricies dictum. Proin ultricies interdum sem, ac vehicula nibh consectetur sit amet.
+						
+						Maecenas sollicitudin eros sit amet felis posuere, vel semper leo finibus. Morbi tempor lorem nisi, et suscipit ante interdum fringilla. Fusce tempus nisi dui, id luctus metus convallis ac. Integer tristique mauris lacinia, scelerisque ex id, tempor justo. Suspendisse sagittis urna tellus, vel egestas nulla faucibus in. Etiam semper fringilla ante ac ornare. Duis eros nibh, lacinia cursus facilisis in, laoreet eu quam. Donec vel tempor odio.
+						
+						Phasellus in felis scelerisque, tempus risus eget, hendrerit augue. Aliquam vulputate aliquam vehicula. Pellentesque ac augue eu mauris facilisis vulputate quis ac dolor. Etiam lacinia dignissim metus, id tincidunt est euismod quis. Fusce eget arcu vehicula, convallis dui non, dapibus lacus. Aenean nulla tellus, lacinia iaculis nunc at, placerat faucibus felis. Duis accumsan risus ut pellentesque iaculis. Suspendisse vitae convallis neque, vel vehicula tellus. Fusce viverra sodales posuere. Etiam at luctus nisl. Suspendisse vitae massa ut risus vulputate iaculis. Aenean in consequat neque. Mauris aliquet, mauris aliquet volutpat ornare, ligula sapien porttitor nunc, non laoreet urna massa at erat.</p>
+					
+				
+		</div>
+		<a href="actual.html" class="btn ">
+			Powrót
+		</a>
+		
+	</div>
+
+</section>
+
+<section id="footer" class="footer" style="background-image: url(img/istockphoto-537437032-2048x2048.jpg)">
+	<div class="footer-layer"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-2 col-md-12">
+				<a href="index.html">
+					<img class="footer-image" src="img/herb.png">
+				</a>
+			</div>
+			<div class="col-lg-4 col-md-12">
+				<ul class="footer-menu">
+					<li class="footer-item">
+						<a class="footer-link" href="about.html">O nas</a>
+					</li>
+					<li class="footer-item">
+						<a class="footer-link" href="actual.html">Aktualności</a>
+					</li>
+					<li class="footer-item">
+						<a class="footer-link" href="datatable.html">Terminarz</a>
+					</li>
+					<li class="footer-item">
+						<a class="footer-link" href="galerry.html">Galeria</a>
+					</li>
+					<li class="footer-item">
+						<a class="footer-link" href="contact.html">Kontakt</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-lg-6 col-md-12 footer-desc">
+				<p class="footer-detail">
+					Szermierczy Uczniowski Klub Sportowy "Zerwikaptur"
+				</p>
+				<p class="footer-detail">
+					os.Niepodległości 19, 31-862 Krakó
+				</p>
+				<p class="footer-detail">
+					Telefon: 505-102-309; 502-350-044
+				</p>
+				<p class="footer-detail">
+					E-mail: zerwikaptur@zerwikaptur.pl
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<script src="js/plugins.js"></script>
+<script src="js/jQuery.js"></script>
+
+<script src="js/script.js"></script>
+<!-- endbuild  -->
 </body>
 </html>
