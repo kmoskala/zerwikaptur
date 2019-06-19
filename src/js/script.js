@@ -41,13 +41,14 @@ $(document).ready(function () {
 			$(this).css("transform", "rotate(45deg)");
 		}
 	});
-	jssor_1_slider_init();
-	$('.trainers-container.owl-carousel').owlCarousel({
+	//jssor_1_slider_init();
+
+	/*$('.trainers-container.owl-carousel').owlCarousel({
 		loop:true,
 		margin:25,
 		nav:true,
 		items:2
-		
+
 	});
 	$('.slider.owl-carousel').owlCarousel({
 		loop:true,
@@ -57,7 +58,7 @@ $(document).ready(function () {
 		autoplay: true,
 		autoplayTimeout:100,
 		autoplayHoverPause: true
-	});
+	});*/
 	
 	
 });

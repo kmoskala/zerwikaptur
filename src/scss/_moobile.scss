@@ -1,0 +1,49 @@
+@media screen and (max-width: 768px) {
+  #header {
+    background-position: center;
+  }
+  h1 {
+    color: #fff;
+    font-size: 35px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+  }
+  .content {
+    .text-page {
+      padding: 0 20px;
+      .title {
+        padding: 20px;
+      }
+      .text {
+        font-size: 18px;
+        letter-spacing: 1px;
+        line-height: 30px;
+      }
+    }
+  }
+  .btn {
+    margin-top: 30px;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 15px 30px;
+    border: 2px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 28px;
+    border-radius: 0;
+  }
+  .footer {
+    .col-md-12 {
+      text-align: center;
+    }
+    .
+  }
+}
+@media screen and (max-width: 991px) {
+
+}
+@media screen and (max-width: 1200px) {
+
+}
