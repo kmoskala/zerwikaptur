@@ -25,6 +25,9 @@
 
   }
   &-form {
+    label {
+      width: 100%;
+    }
     textarea,
     input {
       color: $yellow;
@@ -63,5 +66,10 @@
       background-color: $yellow;
       color: $black;
     }
+  }
+}
+.yellow {
+  a {
+    color: $yellow;
   }
 }

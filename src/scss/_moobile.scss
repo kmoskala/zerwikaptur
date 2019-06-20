@@ -1,3 +1,22 @@
+.c8 {
+  width: 66.66%;
+}
+.c4 {
+  width: 33.33%;
+}
+#calendar { padding: 0 15px;
+ .one-day {
+   width: 100%;
+ }
+}
+
+.slider .item img {
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
 @media screen and (max-width: 768px) {
   #header {
     background-position: center;
@@ -38,11 +57,114 @@
     .col-md-12 {
       text-align: center;
     }
-    .
+
   }
+  .one-item {
+    flex-flow: wrap;
+  }
+  .c8 {
+    width: 100%;
+  }
+  .c4 {
+    width: 100%;
+  }
+  .group-list {
+    list-style: none;
+    padding: 0 10px;
+    margin: 0 10px;
+  }
+
+  //gallery
+
+  .gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+
+  .gallery__item--2 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+
+  .gallery__item--3 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 5;
+    grid-row-end: 9;
+  }
+
+  .gallery__item--4 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 9;
+  }
+
+
+  .gridgallery {
+    &.reverse {
+      margin-top: 15px;
+      .gallery__item--1 {
+        grid-column-start: 5;
+        grid-column-end: 9;
+        grid-row-start: 1;
+        grid-row-end: 5;
+      }
+
+      .gallery__item--2 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 5;
+      }
+
+      .gallery__item--3 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 5;
+        grid-row-end: 9;
+      }
+
+      .gallery__item--4 {
+        grid-column-start: 5;
+        grid-column-end: 9;
+        grid-row-start: 5;
+        grid-row-end: 9;
+      }
+
+
+    }
+  }
+
+
 }
 @media screen and (max-width: 991px) {
-
+  .one-day .day {
+    margin: 5px auto;
+  }
+  #actual {
+    padding: 0 30px;
+  }
+  .one-gal .layer-txt {
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+  }
+  .one-gal .layer-btn {
+    color: #fff;
+    font-size: 14px;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+    line-height: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: ease 1s;
+  }
 }
 @media screen and (max-width: 1200px) {
 
