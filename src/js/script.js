@@ -68,7 +68,8 @@ $(document).ready(function () {
 	$('.slider.owl-carousel').owlCarousel({
 		loop:true,
 		margin:25,
-		nav:true,
+		nav:false,
+		dots: true,
 		autoplay: true,
 		autoplayTimeout:2000,
 		autoplayHoverPause: true,
@@ -88,7 +89,20 @@ $(document).ready(function () {
 	});
 	
 	
+	var slider1 = $('#gallery-slider.owl-carousel');
 	
+	slider1.owlCarousel({
+		loop:true,
+		autoplay: true,
+		autoplayTimeout:2000,
+		autoplayHoverPause: true,
+		nav:false,
+		dots:true,
+		items: 1
+		
+	});
+	
+	new WOW().init();
 	
 });
 function WHCreateCookie(name, value, days) {

@@ -169,3 +169,30 @@
 @media screen and (max-width: 1200px) {
 
 }
+@media screen and (max-width: 768px) {
+  .oneday {
+    flex-flow: column;
+
+    &.reverse {
+      flex-flow: column;
+    }
+  }
+  .one-galery {
+    padding: 0 20px;
+    &.reverse {
+      flex-flow: column;
+    }
+    .one-photo {
+      height: 50px;
+      width: 50px;
+      margin: 0;
+    }
+    .main-img {
+      height: 200px;
+    }
+
+  }
+  .group-container i {
+    left: 90%;
+  }
+}
